@@ -11,7 +11,7 @@
 - name: systemd_setup
   ansible.builtin.import_role:
     name: common
-    tasksfrom: systemd_setup.yaml  
+    tasks_from: systemd_setup.yaml  
 
 - name: install pyhton dependencie
   ansible.builtin.pip:
