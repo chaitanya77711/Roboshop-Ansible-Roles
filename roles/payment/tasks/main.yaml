@@ -1,17 +1,17 @@
 - name: app setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: app-setup.yaml
+    tasks_from: app-setup.yaml
 
 - name: pyhton setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: pyhton.setup.yaml
+    tasks_from: pyhton.setup.yaml
 
 - name: systemd_setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: systemd-setup.yaml
+    tasks_from: systemd-setup.yaml
 
 - name: restart payment
   ansible.builtin.systemd_service:
