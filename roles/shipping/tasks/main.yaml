@@ -1,17 +1,17 @@
 - name: app setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: app-setup.yaml
+    tasks_from: app_setup.yaml
 
 - name: java setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: java-setup.yaml
+    tasks_from: java-setup.yaml
 
 - name: systemd_setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: systemd-setup.yaml  
+    tasksfrom: systemd_setup.yaml  
 
 - name: install pyhton dependencie
   ansible.builtin.pip:
