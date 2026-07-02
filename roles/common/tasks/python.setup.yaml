@@ -5,7 +5,7 @@
   loop:
   - python3
   - gcc
-    - python3-devel
+  - python3-devel
 
 - name: install dependence
   ansible.builtin.pip:
