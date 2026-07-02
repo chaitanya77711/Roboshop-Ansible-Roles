@@ -1,20 +1,20 @@
 - name: app setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: app-setup.yaml
+    tasks_from: app_setup.yaml
 
 - name: nodejs setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: nodejs.-setup.yaml 
+    tasks_from: nodejs.-setup.yaml 
 
 - name: systemd_setup
-  ansible.builtin.import-role:
+  ansible.builtin.import_role:
     name: common
-    tasksfrom: systemd-setup.yaml   
+    tasks_from: systemd_setup.yaml   
 
 - name: start cart
   ansible.builtin.service:
-  name: cart
-  state: restarted
-  enabled: yes
+    name: cart
+    state: restarted
+    enabled: yes
