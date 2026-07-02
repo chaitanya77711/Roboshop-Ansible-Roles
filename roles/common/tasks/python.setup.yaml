@@ -7,7 +7,7 @@
   - gcc
   - python3-devel
 
-- name: install dependence
+- name: install dependencie
   ansible.builtin.pip:
     requirements: requirements.txt
     executable: pip3.9
