@@ -3,7 +3,7 @@
     msg: "chennai super kings"
 
 - name: message
-  ansible.builtin.debug:
+  ansible.builltin.debug:
     msg: "wicket keeper" 
 
 - name: message
