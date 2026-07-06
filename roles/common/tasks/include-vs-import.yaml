@@ -1,0 +1,11 @@
+- name: message
+  ansible.builtin.debug:
+    msg: "chennai super kings"
+
+- name: message
+  ansible.builtin.debug:
+    msg: "wicket keeper" 
+
+- name: message
+  ansible.builtin.debug:
+    msg: "finisher"   
