@@ -1,5 +1,5 @@
 - name: include v import
   hosts: local
-  conection: local 
+  connection: local 
   roles:
   - include-import
