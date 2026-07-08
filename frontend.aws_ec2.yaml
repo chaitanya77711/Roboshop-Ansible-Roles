@@ -3,3 +3,6 @@ regions:
 - us-east-1
 hostnames:
 - private-ip-address
+filters:
+  insrance-state-name : running
+  tag:name: ansible
