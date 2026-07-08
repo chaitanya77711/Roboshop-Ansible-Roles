@@ -2,6 +2,10 @@
   ansible.builtin.debug:
     msg: "chennai super kings"
 
+- name: set the os fact
+  ansible.builtin.set_face:
+    os: "debian"
+
 - name: message
   ansible.builtin.debug:
     msg: "wicket keeper" 
