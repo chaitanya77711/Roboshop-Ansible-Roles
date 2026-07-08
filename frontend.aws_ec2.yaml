@@ -5,4 +5,4 @@ hostnames:
 - private-ip-address
 filters:
   instance-state-name : running
-  tag:name: ansible
+  tag:Name: ansible
