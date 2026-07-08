@@ -4,5 +4,5 @@ regions:
 hostnames:
 - private-ip-address
 filters:
-  insrance-state-name : running
+  instance-state-name : running
   tag:name: ansible
