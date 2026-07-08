@@ -4,4 +4,7 @@
     name: common
     tasks_from: include-vs-import.yaml
   when: os == "redhat"
+  loop:
+  - Dhoni
+  - pawan kalyan
   
