@@ -3,7 +3,7 @@
     msg: "chennai super kings"
 
 - name: set the os fact
-  ansible.builtin.set_face:
+  ansible.builtin.set_fact:
     os: "debian"
 
 - name: message
