@@ -7,7 +7,7 @@ filters:
   instance-state-name : running
   tag:Name: ansible
 compose:
-  ansible_hosts: private_ip_address
+  ansible_host: private_ip_address
 keyed_groups:
 - separator: ''
-  key: tags.component    
+  key: tags.Component    
